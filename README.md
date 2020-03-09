@@ -48,7 +48,7 @@ Configuración del servidor DHCP:
 
 > Saltara otra pantalla de configuración de **WINS**, la dejamos por defecto y siguiente, **Activar este ámbito ahora** y listo. Ya solo faltaria comprobar que está activado.
 
-![Imagen 1 DHCP](src/imgs/capturaDHCP1.png)
+![Imagen 1 DHCP](src/imgs/capturaDHCP1.PNG)
 
 ### Configuración del servidor DNS
 
@@ -82,7 +82,7 @@ Ahora accedemos a la carpeta que se habrá creado dentro de la **Zona de búsque
 - **Direccion IP:** la del servidor, es decir: 172.16.20.3
 - **Marcar el Crear registro del puntero(PTR) asociado.**
 
-![Captura Host A o AAAA](src/imgs/capturaDNS1.png)
+![Captura Host A o AAAA](src/imgs/capturaDNS1.PNG)
 
 Despues de configurar el host con la direccion ip del servidor, vamos a configurar el alias de tipo **CNAME**, para el servidor **IIS** y el de tipo **MX** para le servidor **SMTP**
 
@@ -93,11 +93,11 @@ Despues de configurar el host con la direccion ip del servidor, vamos a configur
 
 Para el registro de tipo **MX**, hay que hacer practicamente que con el de tipo **CNAME**, solo que aqui en Host o dominio secundario hay que poner smtp y lo demás dejarlo por defecto:
 
-![Captura DNS](src/imgs/capturaDNS1.png)
+![Captura DNS](src/imgs/capturaDNS1.PNG)
 
 > Para comprobar que ha funcionado abrimos un **CMD** y poner nslookup y nos saldran nuestros datos, despues ponemos los siguientes nombre de dominio y nos deberia de responder correctamente: www.micentro.edu, smtp.micentro.edu
 
-![Captura DNS](src/imgs/capturaCMD.png)
+![Captura DNS](src/imgs/capturaCMD.PNG)
 
 ### Configuracion del servidor IIS
 Si no sabes encontrar la configuracion del servidor haz clic [aqui](#como-acceder-a-la-configuracion-de-los-diferentes-servicios)
@@ -115,7 +115,7 @@ Para configurar nuestra pagina web en IIS, le damos clic derecho en sitios y **A
 
 Al terminar este paso hay que asignarle permisos a la carpeta creada en el **Escritorio** en Windows, clic derecho **Propiedades**, dentro de Propiedades en la pestaña **Seguridad**. Le damos a **Editar...** y **Agregar...**, escribimos usuarios tal cual y le damos al enter, nos saldrá una ventana agregamos los Usuarios y cerramos.
 
-![Captura del servidor IIS](src/imgs/capturaIIS1.png)
+![Captura del servidor IIS](src/imgs/capturaIIS1.PNG)
 
 > Ya solo faltaria mirar en el navegador en la direccion **www.micentro.edu** si muestra la pagina, en la carpeta creada habria que añadir un **index.html** para que se vea algo sino saldra **www.micentro.edu/**
 
@@ -123,11 +123,11 @@ Al terminar este paso hay que asignarle permisos a la carpeta creada en el **Esc
 - **Error 403.14:** Prohibido el acceso
   - Solucion: En la configuracion del IIS le damos clic al **nombre del servidor** y luego en **examen de directorios**, dentro le damos a **habilitar.** Con esto el problema estaria solucionado.
   
-![Captura del servidor IIS](src/imgs/capturaIISolucion.png)
+![Captura del servidor IIS](src/imgs/capturaIISolucion.PNG)
 ### Como acceder a la configuracion de los diferentes servicios
 
 Para acceder a la configuracion de los diferentes servicios en **Windows 2012 Server** tienes que irte al administrador del servidor, una vez dentro arriba a la derecha te sale una opcion que se llama **Herramientas** que al hacerle clic te abre un desplegable, en ese desplegable buscas el servicio y se te abrirá la configuracion del mismo.
 
-![Captura del servidor](src/imgs/capturaServidor.png)
+![Captura del servidor](src/imgs/capturaServidor.PNG)
 
 [Volver al indice](#indice)
