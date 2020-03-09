@@ -15,7 +15,7 @@
 
 - **Direccion IP:** 172.16.20.3.
 - **Mascara:** 255.255.255.0.
-- **Puerta de enlace:** 127.16.20.1.
+- **Puerta de enlace:** 172.16.20.1.
 - **Nombre del dominio:** micentro.edu.
 
 Lo primero antes de empezar a configurar los servicios de DNS, DHCP y demás es configurar la tarjeta de red y la direccion ip:
