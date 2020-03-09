@@ -20,13 +20,13 @@
 
 Lo primero antes de empezar a configurar los servicios de DNS, DHCP y demás es configurar la tarjeta de red y la direccion ip:
 
-![Imagen 1](src/imgs/capturaRed1.png)
+![Imagen 1](src/imgs/capturaRed1.PNG)
 
 Con esto configurado vamos a pasar a la configuracion del servidor **DHCP** por si tenemos que probar con un cliente.
 
 > Para agregar cualquier servicio o caracteristica en Windows server hay que meterse en la **Administrador del servidor** y dentro arriba a la derecha en **Administrar** se abrirá un desplegable donde saldrá en la primera opción **Agregar roles y características**, despues de seguir esto se abrirá un asistente demasiado simple como para explicarlo, sencillamente siguiente seleccionas los servicios y se instalana.
 
-![Imagen 2](src/imgs/capturaRed2.png)
+![Imagen 2](src/imgs/capturaRed2.PNG)
 
 Una vez agregador todos los servicios(DHCP,DNS,IIS,SMTP y cliente Telnet), vamos a configurarlos uno a uno:
 
